@@ -20,35 +20,40 @@
     <div class="reveal">
       <div class="slides">
 
-        <section data-background-iframe="./particlesjs/slide-1.html" data-background-interactive>
-			<div class="center">
-				<h1>PARTICLES.JS</h1>
-				<a href="https://github.com/VincentGarreau/particles.js/">github.com/VincentGarreau/particles.js/</a>
-			</div>
-		</section>
-		
-		<section>
-			<div class="container">
-				<h1>WHAT IS IT?</h1>
-				<p>"A lightweight JavaScript library for creating particles."</p>
-			</div>
+        <section data-background-iframe="./particlesjs/slide-1.html">
+
+			<section></section>
+			<!-- empty section to start presentation without text -->
 
 			<section>
-					Creating Backgourounds
+				<h1>PARTICLES.JS</h1>
+				<a href="https://github.com/VincentGarreau/particles.js/">github.com/VincentGarreau/particles.js/</a>
 			</section>
-			
+
 			<section>
-					Data Visualization
+				<h2>WHAT DOES IT DO?</h2>
+				<p>"A lightweight JavaScript library for creating particles."</p>
+				<h3 class="fragment fade-up">Easy to use</h3>
+				<h3 class="fragment fade-up">Versatile</h3>
+				<h3 class="fragment fade-up">Eye-catching</h3>
 			</section>
-			
-			<section>
-					Data Visualization
-			</section>
-			
-			<section>
-					Data Visualization
-			</section>
+
+			<section data-background-iframe="./particlesjs/slide-1.html" data-background-interactive></section>
 		</section>
+		<!-- FIRST SLIDE -->
+
+		<section data-background-video="./assets/CPMlink.mp4"></section>
+		<!-- SECOND SLIDE -->
+		
+		<section data-background-video="./assets/hacktTheBox.mp4"></section>
+		<!-- THIRD SLIDE -->
+
+		<section data-background-iframe="./particlesjs/slide-2.html" data-background-interactive>
+
+			<h2>Data Visualization</h2>
+
+		</section>
+		<!-- FOURTH SLIDE -->
 		
       </div>
 	</div>
@@ -62,6 +67,8 @@
         controls: false,
 		progress: false,
 		preloadIframes: false,
+		autoPlayMedia: true,
+
         dependencies: [
           { src: "plugin/markdown/marked.js" },
           { src: "plugin/highlight/highlight.js", async: true },
