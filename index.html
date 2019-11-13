@@ -20,31 +20,48 @@
     <div class="reveal">
       <div class="slides">
 
-        <section class="particles" id="particles-slide-1">
+        <section data-background-iframe="./particlesjs/slide-1.html" data-background-interactive>
 			<div class="center">
 				<h1>PARTICLES.JS</h1>
 				<a href="https://github.com/VincentGarreau/particles.js/">github.com/VincentGarreau/particles.js/</a>
 			</div>
 		</section>
 		
-		<section>Slide 2</section>
+		<section>
+			<div class="container">
+				<h1>WHAT IS IT?</h1>
+				<p>"A lightweight JavaScript library for creating particles."</p>
+			</div>
+
+			<section>
+					Creating Backgourounds
+			</section>
+			
+			<section>
+					Data Visualization
+			</section>
+			
+			<section>
+					Data Visualization
+			</section>
+			
+			<section>
+					Data Visualization
+			</section>
+		</section>
 		
       </div>
-    </div>
-
+	</div>
+	
 	<!-- reveal.js -->
 	<script src="js/reveal.js"></script>
 	
-	<!-- particles.js -->
-	<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-	
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
     <script>
 	  // RevealJS config
       Reveal.initialize({
         controls: false,
-        progress: false,
+		progress: false,
+		preloadIframes: false,
         dependencies: [
           { src: "plugin/markdown/marked.js" },
           { src: "plugin/highlight/highlight.js", async: true },
@@ -52,7 +69,5 @@
         ]
       });
     </script>
-
-	<script src="./js/slide-1.js"></script>
   </body>
 </html>
