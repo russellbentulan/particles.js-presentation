@@ -1,23 +1,29 @@
-.reveal a,
-body {
-    color: #1f1f1f;
+.reveal a {
+  font-weight: bold;
+  color: #FFF;
+  text-decoration: underline;
 }
 
-.container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    height: 100vh;
+.slide > * {
+  height: 100vh;
 }
 
-.center {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.slide {
+  position: relative;
+}
+
+.slide-title {
+  position: relative;
+  display: inline-block;
+  color: #1f1f1f !important;
+  /* transform: translate(100%, -50%); */
+  background: #FFF;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+#primary-title {
+  text-transform: lowercase;
 }
 
 #salt {

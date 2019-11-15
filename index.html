@@ -26,12 +26,12 @@
 			<!-- empty section to start presentation without text -->
 
 			<section>
-				<h1>particles.js</h1>
+				<h1 id="primary-title">particles.js</h1>
 				<a href="https://github.com/VincentGarreau/particles.js/">github.com/VincentGarreau/particles.js/</a>
 			</section>
 
 			<section>
-				<h2>What does it do?</h2>
+				<h2 class="slide-title">What does it do?</h2>
 				<p>"A lightweight JavaScript library for creating particles."</p>
 				<h3 class="fragment fade-up">Easy to use</h3>
 				<h3 class="fragment fade-up">Versatile</h3>
@@ -42,64 +42,75 @@
 		</section>
 		<!-- FIRST SLIDE -->
 
-		<section data-background-video="./assets/CPMlink.mp4"></section>
+		<section data-background-video="./assets/CPMlink.mp4" class="slide"></section>
 		<!-- SECOND SLIDE -->
 		
-		<section data-background-video="./assets/hacktTheBox.mp4"></section>
+		<section data-background-video="./assets/hacktTheBox.mp4" class="slide"></section>
 		<!-- THIRD SLIDE -->
 
-		<section data-background-iframe="./particlesjs/slide-2.html" data-background-interactive>
+		<section data-background-iframe="./particlesjs/slide-2.html" class="slide" data-background-interactive>
 
-			<h2>Data Visualization</h2>
+			<div class="title-container">
+				<h2 class="slide-title">Data Visualization</h2>
+			</div>
 
 		</section>
 		<!-- FOURTH SLIDE -->
 
-		<section>
-			<h2>Use it sparingly</h2>
-			<p>(this will be an ugly example)</p>
+		<section class="slide">
+
+			<div class="title-container">
+				<h2 class="slide-title">Use it sparingly</h2>
+			</div>
+
 		</section>
 		<!-- FIFTH SLIDE -->
 
 
-		<section data-background-iframe="./particlesjs/slide-6.html"></section>
+		<section data-background-iframe="./particlesjs/slide-6.html" class="slide"></section>
 		<!-- SIXTH SLIDE -->
 
-		<section>
+		<!-- <section class="slide">
 
-			<h2>Let's get cookin'</h2>
+			<h2 class="slide-title">Let's get cookin'</h2>
 			<iframe src="https://giphy.com/embed/dT3tIohkRjOEg" width="480" height="375" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
 			<img src="assets/salt.gif" alt="salt gif" id="salt">
 
-		</section>
+		</section> -->
 		
-		<section>
+		<section class="slide">
 			
-			<h2>Getting started</h2>
+			<section>
 
-			<pre>
-				<code class="hljs" data-trim>
-					particle container element
+				<div class="title-container">
+					<h2 class="slide-title">Getting started</h2>
+				</div>
+				
+				<pre>
+					<code class="hljs" data-trim>
+						particle container element
 					&lt;div id="particles-js"&gt;&lt;/div&gt;
-				</code>
-
-				<code class="hljs" data-trim>
-					loading the particles.js library locally
-					&lt;script src="particles.js"&gt;&lt;/script&gt;
-
-					         OR
-
-					loading the particles.js CDN
-					&lt;script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"&gt;&lt;/script&gt;
-				</code>
-			</pre>
-
+					</code>
+					
+					<code class="hljs" data-trim>
+						loading the particles.js library locally
+						&lt;script src="particles.js"&gt;&lt;/script&gt;
+						
+						OR
+						
+						loading the particles.js CDN
+						&lt;script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"&gt;&lt;/script&gt;
+					</code>
+				</pre>
+			</section>
+			
 		</section>
 		<!-- SEVENTH SLIDE -->
 
-		<section>
+		<section class="slide">
+			
 			<section>
-				<h2>Configuring your particles</h2>
+				<h2 class="slide-title">Configuring your particles</h2>
 				<pre>
 					<code class="hljs" data-trim>
 						&lt;script src="particles-config.js"&gt;&lt;/script&gt;
@@ -109,7 +120,11 @@
 			</section>
 
 			<section>
-				<h2>Configuring your particles</h2>
+
+				<div class="title-container">
+					<h2 class="slide-title">Configuring your particles</h2>
+				</div>
+
 				<pre>
 					<code class="hljs" data-trim>
 						{
@@ -186,7 +201,11 @@
 			</section>
 			
 			<section>
-				<h2>Configuring your particles</h2>
+
+				<div class="title-container">
+					<h2 class="slide-title">Configuring your particles</h2>
+				</div>
+
 				<pre>
 					<code class="hljs" data-trim>
 						{
@@ -234,11 +253,16 @@
 					</code>
 				</pre>
 			</section>
+
 		</section>
 		<!-- EIGHTH SLIDE -->
 
 		<section data-background-iframe="./particlesjs/last-slide.html" data-background-interactive>
-			<h2>Thank You</h2>
+
+			<div class="title-container">
+				<h2 class="single-title">Thank You</h2>
+			</div>
+
 		</section>
 		<!-- LAST SLIDE -->
       </div>
