@@ -12,6 +12,12 @@
   position: relative;
 }
 
+.slide .credit {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
 .slide-title {
   position: relative;
   display: inline-block;

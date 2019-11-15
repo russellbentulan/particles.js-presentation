@@ -42,41 +42,53 @@
 		</section>
 		<!-- FIRST SLIDE -->
 
-		<section data-background-video="./assets/CPMlink.mp4" class="slide"></section>
-		<!-- SECOND SLIDE -->
-		
-		<section data-background-video="./assets/hacktTheBox.mp4" class="slide"></section>
-		<!-- THIRD SLIDE -->
-
-		<section data-background-iframe="./particlesjs/slide-2.html" class="slide" data-background-interactive>
-
-			<div class="title-container">
-				<h2 class="slide-title">Data Visualization</h2>
+		<section data-background-video="./assets/CPMlink.mp4" class="slide">
+			
+			<div class="credit">
+				<a href="https://cpmlink.net/">cpmlink.net</a>
 			</div>
 
 		</section>
-		<!-- FOURTH SLIDE -->
+		<!-- SECOND SLIDE -->
+		
+		<section data-background-video="./assets/hacktTheBox.mp4" class="slide">
+		
+			<div class="credit">
+				<a href="https://www.hackthebox.eu/">hackthebox.eu</a>
+			</div>
 
-		<section class="slide">
+		</section>
+		<!-- THIRD SLIDE -->
+
+		<section data-background-video="./assets/badExample.mp4" class="slide">
 
 			<div class="title-container">
 				<h2 class="slide-title">Use it sparingly</h2>
 			</div>
 
 		</section>
+		<!-- FOURTH SLIDE -->
+
+
+		<section data-background-iframe="./particlesjs/snow-particles.html" class="slide"></section>
 		<!-- FIFTH SLIDE -->
 
+		<section class="slide">
 
-		<section data-background-iframe="./particlesjs/slide-6.html" class="slide"></section>
+			<section>
+
+				<div class="title-container">
+					<h2 class="slide-title">Let's get cookin'</h2>
+				</div>
+				
+				<div>
+					<iframe src="https://giphy.com/embed/dT3tIohkRjOEg" width="480" height="375" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+					<img src="assets/salt.gif" alt="salt gif" id="salt">
+				</div>
+				
+			</section>
+		</section>
 		<!-- SIXTH SLIDE -->
-
-		<!-- <section class="slide">
-
-			<h2 class="slide-title">Let's get cookin'</h2>
-			<iframe src="https://giphy.com/embed/dT3tIohkRjOEg" width="480" height="375" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
-			<img src="assets/salt.gif" alt="salt gif" id="salt">
-
-		</section> -->
 		
 		<section class="slide">
 			
@@ -108,7 +120,7 @@
 		<!-- SEVENTH SLIDE -->
 
 		<section class="slide">
-			
+
 			<section>
 				<h2 class="slide-title">Configuring your particles</h2>
 				<pre>
@@ -127,75 +139,77 @@
 
 				<pre>
 					<code class="hljs" data-trim>
-						{
-						"particles": {
-							"number": {
-							"value": 80,
-							"density": {
+					particlesJS(
+						"particles-js",
+							{
+							"particles": {
+								"number": {
+								"value": 80,
+								"density": {
+									"enable": true,
+									"value_area": 800
+								}
+								},
+								"color": {
+								"value": "#ffffff"
+								},
+								"shape": {
+								"type": "circle",
+								"stroke": {
+									"width": 0,
+									"color": "#000000"
+								},
+								"polygon": {
+									"nb_sides": 5
+								},
+								"image": {
+									"src": "img/github.svg",
+									"width": 100,
+									"height": 100
+								}
+								},
+								"opacity": {
+								"value": 0.5,
+								"random": false,
+								"anim": {
+									"enable": false,
+									"speed": 1,
+									"opacity_min": 0.1,
+									"sync": false
+								}
+								},
+								"size": {
+								"value": 10,
+								"random": true,
+								"anim": {
+									"enable": false,
+									"speed": 80,
+									"size_min": 0.1,
+									"sync": false
+								}
+								},
+								"line_linked": {
 								"enable": true,
-								"value_area": 800
-							}
+								"distance": 300,
+								"color": "#ffffff",
+								"opacity": 0.4,
+								"width": 2
+								},
+								"move": {
+								"enable": true,
+								"speed": 12,
+								"direction": "none",
+								"random": false,
+								"straight": false,
+								"out_mode": "out",
+								"bounce": false,
+								"attract": {
+									"enable": false,
+									"rotateX": 600,
+									"rotateY": 1200
+								}
+								}
 							},
-							"color": {
-							"value": "#ffffff"
-							},
-							"shape": {
-							"type": "circle",
-							"stroke": {
-								"width": 0,
-								"color": "#000000"
-							},
-							"polygon": {
-								"nb_sides": 5
-							},
-							"image": {
-								"src": "img/github.svg",
-								"width": 100,
-								"height": 100
-							}
-							},
-							"opacity": {
-							"value": 0.5,
-							"random": false,
-							"anim": {
-								"enable": false,
-								"speed": 1,
-								"opacity_min": 0.1,
-								"sync": false
-							}
-							},
-							"size": {
-							"value": 10,
-							"random": true,
-							"anim": {
-								"enable": false,
-								"speed": 80,
-								"size_min": 0.1,
-								"sync": false
-							}
-							},
-							"line_linked": {
-							"enable": true,
-							"distance": 300,
-							"color": "#ffffff",
-							"opacity": 0.4,
-							"width": 2
-							},
-							"move": {
-							"enable": true,
-							"speed": 12,
-							"direction": "none",
-							"random": false,
-							"straight": false,
-							"out_mode": "out",
-							"bounce": false,
-							"attract": {
-								"enable": false,
-								"rotateX": 600,
-								"rotateY": 1200
-							}
-							}
-						},
 					</code>
 				</pre>
 			</section>
@@ -254,13 +268,31 @@
 				</pre>
 			</section>
 
+			
+			<section>
+				<h2 class="slide-title">Styling your canvas</h2>
+				<pre>
+					<code class="hljs" data-trim>
+						#particles-js{
+							width: 100%;
+							height: 100%;
+							background: linear-gradient(to bottom, #0f3443, #34e89e);
+							background-size: cover;
+							background-position: 50% 50%;
+							background-repeat: no-repeat;
+						}
+					</code>
+					
+				</pre>
+			</section>
+
 		</section>
 		<!-- EIGHTH SLIDE -->
 
 		<section data-background-iframe="./particlesjs/last-slide.html" data-background-interactive>
 
 			<div class="title-container">
-				<h2 class="single-title">Thank You</h2>
+				<h2 class="slide-title">Thank You</h2>
 			</div>
 
 		</section>
@@ -280,6 +312,7 @@
 		autoPlayMedia: true,
 		overview: false,
 		viewDistance: 1,
+		transition: 'slide',
 
         dependencies: [
           { src: "plugin/markdown/marked.js" },
