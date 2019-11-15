@@ -42,7 +42,7 @@ particlesJS(
         }
       },
       opacity: {
-        value: 0.5,
+        value: 0.8,
         random: false,
         anim: {
           enable: false,
@@ -52,14 +52,14 @@ particlesJS(
         }
       },
       size: {
-        value: 5,
+        value: 8,
         random: true,
         anim: {
-          enable: false,
-          speed: 40,
-          size_min: 0.1,
-          sync: false
+          enable: false
         }
+      },
+      line_linked: {
+        enable: false
       },
       move: {
         enable: true,
@@ -67,12 +67,17 @@ particlesJS(
         direction: "none",
         random: true,
         straight: false,
-        out_mode: "out",
+        out_mode: "bounce",
         attract: {
           enable: false,
           rotateX: 600,
           rotateY: 1200
         }
+      }
+    },
+    interactivity: {
+      events: {
+        onhover: { enable: false }
       }
     },
     retina_detect: true
