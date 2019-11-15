@@ -19,3 +19,12 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+#salt {
+  display: block;
+  max-width: 300px;
+  border: none;
+  box-shadow: none;
+  margin: 0 auto;
+  transform: translateX(-100px);
+}

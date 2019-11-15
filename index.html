@@ -66,159 +66,180 @@
 		<!-- SIXTH SLIDE -->
 
 		<section>
+
+			<h2>Let's get cookin'</h2>
+			<iframe src="https://giphy.com/embed/dT3tIohkRjOEg" width="480" height="375" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+			<img src="assets/salt.gif" alt="salt gif" id="salt">
+
+		</section>
+		
+		<section>
 			
 			<h2>Getting started</h2>
 
 			<pre>
-			<code class="hljs" data-trim>
-				&lt;!-- the particles canvas --&gt;
-				&lt;div id="particles-js"&gt;&lt;/div&gt;
-			</code>
+				<code class="hljs" data-trim>
+					particle container element
+					&lt;div id="particles-js"&gt;&lt;/div&gt;
+				</code>
 
-			<code class="hljs" data-trim>
-				&lt;!-- loading the particles.js library locally --&gt;
-				&lt;script src="particles.js"&gt;&lt;/script&gt;
+				<code class="hljs" data-trim>
+					loading the particles.js library locally
+					&lt;script src="particles.js"&gt;&lt;/script&gt;
 
-				&lt;!-- OR --&gt;
+					         OR
 
-				&lt;!-- loading the particles.js CDN --&gt;
-				&lt;script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"&gt;&lt;/script&gt;
-			</code>
-
-			<code class="hljs" data-trim>
-				&lt;!-- config file --&gt;
-				&lt;script src="particles-config.js"&gt;&lt;/script&gt;
-			</code>
+					loading the particles.js CDN
+					&lt;script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"&gt;&lt;/script&gt;
+				</code>
 			</pre>
 
 		</section>
 		<!-- SEVENTH SLIDE -->
 
 		<section>
-			<h2>Configuring your particles</h2>
-			<pre>
-				<code class="hljs" data-trim>
-					{
-					"particles": {
-						"number": {
-						"value": 80,
-						"density": {
-							"enable": true,
-							"value_area": 800
-						}
-						},
-						"color": {
-						"value": "#ffffff"
-						},
-						"shape": {
-						"type": "circle",
-						"stroke": {
-							"width": 0,
-							"color": "#000000"
-						},
-						"polygon": {
-							"nb_sides": 5
-						},
-						"image": {
-							"src": "img/github.svg",
-							"width": 100,
-							"height": 100
-						}
-						},
-						"opacity": {
-						"value": 0.5,
-						"random": false,
-						"anim": {
-							"enable": false,
-							"speed": 1,
-							"opacity_min": 0.1,
-							"sync": false
-						}
-						},
-						"size": {
-						"value": 10,
-						"random": true,
-						"anim": {
-							"enable": false,
-							"speed": 80,
-							"size_min": 0.1,
-							"sync": false
-						}
-						},
-						"line_linked": {
-						"enable": true,
-						"distance": 300,
-						"color": "#ffffff",
-						"opacity": 0.4,
-						"width": 2
-						},
-						"move": {
-						"enable": true,
-						"speed": 12,
-						"direction": "none",
-						"random": false,
-						"straight": false,
-						"out_mode": "out",
-						"bounce": false,
-						"attract": {
-							"enable": false,
-							"rotateX": 600,
-							"rotateY": 1200
-						}
-						}
-					},
-					"interactivity": {
-						"detect_on": "canvas",
-						"events": {
-						"onhover": {
-							"enable": false,
-							"mode": "repulse"
-						},
-						"onclick": {
-							"enable": true,
-							"mode": "push"
-						},
-						"resize": true
-						},
-						"modes": {
-						"grab": {
-							"distance": 800,
+			<section>
+				<h2>Configuring your particles</h2>
+				<pre>
+					<code class="hljs" data-trim>
+						&lt;script src="particles-config.js"&gt;&lt;/script&gt;
+					</code>
+					
+				</pre>
+			</section>
+
+			<section>
+				<h2>Configuring your particles</h2>
+				<pre>
+					<code class="hljs" data-trim>
+						{
+						"particles": {
+							"number": {
+							"value": 80,
+							"density": {
+								"enable": true,
+								"value_area": 800
+							}
+							},
+							"color": {
+							"value": "#ffffff"
+							},
+							"shape": {
+							"type": "circle",
+							"stroke": {
+								"width": 0,
+								"color": "#000000"
+							},
+							"polygon": {
+								"nb_sides": 5
+							},
+							"image": {
+								"src": "img/github.svg",
+								"width": 100,
+								"height": 100
+							}
+							},
+							"opacity": {
+							"value": 0.5,
+							"random": false,
+							"anim": {
+								"enable": false,
+								"speed": 1,
+								"opacity_min": 0.1,
+								"sync": false
+							}
+							},
+							"size": {
+							"value": 10,
+							"random": true,
+							"anim": {
+								"enable": false,
+								"speed": 80,
+								"size_min": 0.1,
+								"sync": false
+							}
+							},
 							"line_linked": {
-							"opacity": 1
+							"enable": true,
+							"distance": 300,
+							"color": "#ffffff",
+							"opacity": 0.4,
+							"width": 2
+							},
+							"move": {
+							"enable": true,
+							"speed": 12,
+							"direction": "none",
+							"random": false,
+							"straight": false,
+							"out_mode": "out",
+							"bounce": false,
+							"attract": {
+								"enable": false,
+								"rotateX": 600,
+								"rotateY": 1200
+							}
 							}
 						},
-						"bubble": {
-							"distance": 800,
-							"size": 80,
-							"duration": 2,
-							"opacity": 0.8,
-							"speed": 3
+					</code>
+				</pre>
+			</section>
+			
+			<section>
+				<h2>Configuring your particles</h2>
+				<pre>
+					<code class="hljs" data-trim>
+						{
+						"interactivity": {
+							"detect_on": "canvas",
+							"events": {
+							"onhover": {
+								"enable": false,
+								"mode": "repulse"
+							},
+							"onclick": {
+								"enable": true,
+								"mode": "push"
+							},
+							"resize": true
+							},
+							"modes": {
+							"grab": {
+								"distance": 800,
+								"line_linked": {
+								"opacity": 1
+								}
+							},
+							"bubble": {
+								"distance": 800,
+								"size": 80,
+								"duration": 2,
+								"opacity": 0.8,
+								"speed": 3
+							},
+							"repulse": {
+								"distance": 400,
+								"duration": 0.4
+							},
+							"push": {
+								"particles_nb": 4
+							},
+							"remove": {
+								"particles_nb": 2
+							}
+							}
 						},
-						"repulse": {
-							"distance": 400,
-							"duration": 0.4
-						},
-						"push": {
-							"particles_nb": 4
-						},
-						"remove": {
-							"particles_nb": 2
+						"retina_detect": true
 						}
-						}
-					},
-					"retina_detect": true
-					}
-				</code>
-			</pre>
+					</code>
+				</pre>
+			</section>
 		</section>
 		<!-- EIGHTH SLIDE -->
 
-		<section>
-			<h1><em>Whew</em></h1>
+		<section data-background-iframe="./particlesjs/last-slide.html" data-background-interactive>
+			<h2>Thank You</h2>
 		</section>
-		<!-- NINTH SLIDE -->
-
-		<section data-background-iframe="./particlesjs/last-slide.html" data-background-interactive></section>
 		<!-- LAST SLIDE -->
       </div>
 	</div>
@@ -231,8 +252,10 @@
       Reveal.initialize({
         controls: false,
 		progress: false,
-		preloadIframes: false,
+		preloadIframes: null,
 		autoPlayMedia: true,
+		overview: false,
+		viewDistance: 1,
 
         dependencies: [
           { src: "plugin/markdown/marked.js" },
